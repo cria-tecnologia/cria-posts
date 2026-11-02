@@ -202,8 +202,11 @@ def achar_ffmpeg():
     exe = shutil.which("ffmpeg")
     if exe:
         return exe
-    subprocess.run([sys.executable, "-m", "pip", "install", "-q", "imageio-ffmpeg"], check=True)
-    import imageio_ffmpeg
+    try:
+        import imageio_ffmpeg
+    except ImportError:
+        subprocess.run([sys.executable, "-m", "pip", "install", "-q", "imageio-ffmpeg"], check=True)
+        import imageio_ffmpeg
     return imageio_ffmpeg.get_ffmpeg_exe()
 
 
@@ -226,7 +229,8 @@ def render_video(nav, post, s, pasta, n, fps=30):
         subprocess.run([achar_ffmpeg(), "-y", "-loglevel", "error",
                         "-framerate", str(fps), "-i", f"{d}/q%05d.jpg",
                         "-f", "lavfi", "-i", "anullsrc=r=44100:cl=stereo",
-                        "-shortest", "-c:v", "libx264", "-pix_fmt", "yuv420p", "-profile:v", "high",
+                        "-shortest", "-vf", "scale=in_range=pc:out_range=tv,format=yuv420p",
+                        "-c:v", "libx264", "-pix_fmt", "yuv420p", "-color_range", "tv", "-profile:v", "high",
                         "-preset", "medium", "-crf", "20", "-r", str(fps),
                         "-c:a", "aac", "-b:a", "128k", "-movflags", "+faststart", str(saida)], check=True)
     pagina.close()
