@@ -1,0 +1,52 @@
+{
+  "data": "2026-11-03",
+  "slug": "cobranca-com-ia",
+  "tema": "Cobrança com IA",
+  "formato": "carrossel",
+  "pecas": [
+    {
+      "layout": "capa",
+      "titulo": "Sua equipe ainda cobra cliente na [[mão]]?",
+      "subtitulo": "Como a IA assume a cobrança de pendências, passo a passo."
+    },
+    {
+      "layout": "interno",
+      "chamada": "O problema",
+      "titulo": "Todo dia alguém abre a lista, procura o contato e manda a mesma mensagem.",
+      "texto": "Enquanto isso, o trabalho que traz dinheiro espera: vender, atender, decidir."
+    },
+    {
+      "layout": "interno",
+      "chamada": "Passo 1",
+      "titulo": "A IA lê a lista de pendências.",
+      "texto": "Direto da planilha ou do sistema que a empresa já usa: quem deve o quê e desde quando."
+    },
+    {
+      "layout": "interno",
+      "chamada": "Passo 2",
+      "titulo": "Manda a mensagem certa para cada cliente.",
+      "texto": "No tom da sua empresa, com o que está pendente e o próximo passo. Sem copiar e colar."
+    },
+    {
+      "layout": "interno",
+      "chamada": "Passo 3",
+      "titulo": "Acompanha quem respondeu.",
+      "texto": "Registra cada resposta e lembra de novo quem ficou em silêncio, no intervalo que vocês definirem."
+    },
+    {
+      "layout": "interno",
+      "chamada": "Passo 4",
+      "titulo": "Chama uma pessoa quando precisa.",
+      "texto": "Negociação, exceção ou cliente insatisfeito vão para a equipe, com o histórico pronto."
+    },
+    {
+      "layout": "cta",
+      "titulo": "A cobrança roda sozinha. A equipe cuida do que exige gente.",
+      "texto": "Quer saber se isso funciona na sua empresa?",
+      "cta": "Comente DIAGNÓSTICO."
+    }
+  ],
+  "publicar_em": "2026-11-03 12:00",
+  "legenda_instagram": "Sua equipe ainda cobra cliente um por um?\nA IA pode assumir essa rotina: lê as pendências, manda a mensagem certa para cada cliente e lembra quem não respondeu.\nQuando o caso pede uma pessoa, ela passa para a equipe com o histórico pronto.\nArraste para ver o passo a passo.\nComente DIAGNÓSTICO e mostramos como isso funcionaria na sua empresa.\n#automacaodeprocessos #inteligenciaartificial #gestaoempresarial #cobranca",
+  "legenda_linkedin": "Cobrar pendência é um trabalho que ninguém contrata alguém para fazer, mas que costuma tomar tempo da equipe toda semana.\n\nO roteiro quase sempre é o mesmo: abrir a lista, procurar o contato, copiar a mensagem, anotar quem respondeu e repetir dias depois.\n\nÉ um bom ponto de partida para a IA, porque a regra é clara e a tarefa se repete. Na prática, funciona em quatro passos:\n\n1. A IA lê as pendências direto da planilha ou do sistema que a empresa já usa.\n2. Envia a cada cliente uma mensagem com o que está pendente e o próximo passo, no tom da empresa.\n3. Registra as respostas e volta a lembrar quem não respondeu, no intervalo definido.\n4. Encaminha para uma pessoa o que exige julgamento: negociação, exceção, cliente insatisfeito.\n\nA equipe deixa a parte repetitiva e fica com a parte que precisa de gente.\n\nNa sua empresa, quem cuida da cobrança hoje, e quanto tempo isso leva por semana?\n\n#AutomacaoDeProcessos #InteligenciaArtificial"
+}
