@@ -12,7 +12,10 @@ import html
 import json
 import pathlib
 import re
+import shutil
+import subprocess
 import sys
+import tempfile
 
 from playwright.sync_api import sync_playwright
 
@@ -121,14 +124,135 @@ LAYOUTS = {
 }
 
 
+# ---------------------------------------------------------------- vídeo motion (Reels)
+VIDEO_CSS = """
+.v { width:1080px; height:1920px; position:relative; overflow:hidden; font-family:Sora, Arial, sans-serif; }
+.cena { position:absolute; inset:0; padding:300px 96px 480px; display:flex; flex-direction:column; justify-content:center; background:var(--nevoa); color:var(--grafite); opacity:0; }
+.cena.escura { background:var(--grafite); color:var(--branco); }
+.cena .logo-topo { position:absolute; top:150px; left:96px; width:220px; }
+.cena .titulo-capa { font-size:104px; line-height:1.15; }
+.cena .titulo { font-size:84px; line-height:1.2; }
+.cena .texto { font-size:50px; }
+.cena .chamada { font-size:32px; }
+.cena .itens { margin-top:56px; display:grid; gap:36px; }
+.cena .item { display:flex; gap:28px; align-items:baseline; font-size:52px; line-height:1.3; font-weight:500; }
+.cena .item .num { font-size:30px; font-weight:600; color:var(--cinza); letter-spacing:.1em; min-width:56px; }
+.cena .cta { font-size:64px; }
+.v .hlv { background-image:linear-gradient(var(--laranja),var(--laranja)); background-repeat:no-repeat; background-size:0% 100%; border-radius:.12em; padding:0 .16em; }
+.v .barra { position:absolute; z-index:5; left:96px; right:96px; top:96px; height:6px; border-radius:3px; background:var(--cinza-claro); opacity:.6; }
+.v .barra i { display:block; height:100%; width:0; border-radius:3px; background:var(--grafite); }
+"""
+
+VIDEO_JS = """
+const cenas=[...document.querySelectorAll('.cena')];
+const durs=cenas.map(c=>parseFloat(c.dataset.dur));
+const total=durs.reduce((a,b)=>a+b,0);
+const ease=p=>1-Math.pow(1-p,3);
+const clamp=x=>Math.max(0,Math.min(1,x));
+window.setT=function(t){
+  let ini=0;
+  cenas.forEach((c,i)=>{
+    const d=durs[i], lt=t-ini, ativa=(lt>=0 && lt<d) || (i===cenas.length-1 && t>=total);
+    let op=0;
+    if(ativa){ op=clamp(lt/0.25); if(i<cenas.length-1) op=Math.min(op, clamp((d-lt)/0.3)); }
+    c.style.opacity=op;
+    c.querySelectorAll('[data-in]').forEach(el=>{
+      const p=ease(clamp((lt-parseFloat(el.dataset.in))/0.55));
+      el.style.opacity=p; el.style.transform='translateY('+((1-p)*56)+'px)';
+    });
+    c.querySelectorAll('.hlv').forEach(el=>{
+      const p=ease(clamp((lt-parseFloat(el.dataset.wipe))/0.5));
+      el.style.backgroundSize=(p*100)+'% 100%';
+      el.style.color = p>0.55 ? '#FFFFFF' : '';
+    });
+    ini+=d;
+  });
+  document.querySelector('.barra i').style.width=(Math.min(t/total,1)*100)+'%';
+};
+"""
+
+
+def rich_video(texto, atraso):
+    seguro = html.escape(texto)
+    return re.sub(r"\[\[(.+?)\]\]", lambda m: f'<span class="hlv" data-wipe="{atraso}">{m.group(1)}</span>', seguro)
+
+
+def cena_html(c):
+    escura = c["tipo"] == "cta"
+    lg = (ASSETS / ("logo-grafite.png" if escura else "logo-nevoa.png")).as_uri()
+    partes = [f'<img class="logo-topo" src="{lg}" alt="Cria Tecnologia">']
+    t = 0.25
+    if c.get("chamada"):
+        partes.append(f'<div class="chamada" data-in="{t}">{html.escape(c["chamada"])}</div>'); t += 0.25
+    classe = "titulo-capa" if c["tipo"] == "gancho" else "titulo"
+    partes.append(f'<h2 class="{classe}" data-in="{t}">{rich_video(c["titulo"], t + 0.7)}</h2>'); t += 0.6
+    if c.get("texto"):
+        partes.append(f'<p class="texto" data-in="{t}">{rich_video(c["texto"], t + 0.7)}</p>'); t += 0.5
+    if c.get("itens"):
+        itens = "".join(
+            f'<div class="item" data-in="{t + 0.7 * k:.2f}"><span class="num">{k + 1:02d}</span><span>{html.escape(x)}</span></div>'
+            for k, x in enumerate(c["itens"]))
+        partes.append(f'<div class="itens">{itens}</div>')
+    if c.get("cta"):
+        partes.append(f'<p class="cta" data-in="{t + 0.3}">{html.escape(c["cta"])}</p>')
+    return f'<div class="cena{" escura" if escura else ""}" data-dur="{c["dur"]}">{"".join(partes)}</div>'
+
+
+def achar_ffmpeg():
+    exe = shutil.which("ffmpeg")
+    if exe:
+        return exe
+    subprocess.run([sys.executable, "-m", "pip", "install", "-q", "imageio-ffmpeg"], check=True)
+    import imageio_ffmpeg
+    return imageio_ffmpeg.get_ffmpeg_exe()
+
+
+def render_video(nav, post, s, pasta, n, fps=30):
+    corpo = '<div class="v"><div class="barra"><i></i></div>' + "".join(cena_html(c) for c in s["cenas"]) + "</div>"
+    doc = (f"<!doctype html><html lang='pt-BR'><head><meta charset='utf-8'><style>{CSS}{VIDEO_CSS}</style></head>"
+           f"<body>{corpo}<script>{VIDEO_JS}</script></body></html>")
+    tmp = pasta / f"_tmp_{n:02d}.html"
+    tmp.write_text(doc, encoding="utf-8")
+    pagina = nav.new_page(viewport={"width": 1080, "height": 1920}, device_scale_factor=1)
+    pagina.goto(tmp.as_uri())
+    pagina.evaluate("document.fonts.ready")
+    total = sum(c["dur"] for c in s["cenas"])
+    quadros = int(round(total * fps))
+    with tempfile.TemporaryDirectory() as d:
+        for i in range(quadros):
+            pagina.evaluate(f"setT({i / fps})")
+            pagina.screenshot(path=f"{d}/q{i:05d}.jpg", type="jpeg", quality=92)
+        saida = pasta / f"{post['slug']}-{n:02d}.mp4"
+        subprocess.run([achar_ffmpeg(), "-y", "-loglevel", "error",
+                        "-framerate", str(fps), "-i", f"{d}/q%05d.jpg",
+                        "-f", "lavfi", "-i", "anullsrc=r=44100:cl=stereo",
+                        "-shortest", "-c:v", "libx264", "-pix_fmt", "yuv420p", "-profile:v", "high",
+                        "-preset", "medium", "-crf", "20", "-r", str(fps),
+                        "-c:a", "aac", "-b:a", "128k", "-movflags", "+faststart", str(saida)], check=True)
+    pagina.close()
+    tmp.unlink()
+    return saida.name
+
+
+def contar_destaques(obj):
+    return len(re.findall(r"\[\[.+?\]\]", json.dumps(obj, ensure_ascii=False)))
+
+
 def validar(post):
-    textos = json.dumps(post["pecas"], ensure_ascii=False)
-    destaques = len(re.findall(r"\[\[.+?\]\]", textos))
-    if destaques != 1:
-        raise SystemExit(f"Regra da marca: a peça precisa de exatamente 1 destaque laranja, tem {destaques}.")
+    # Reels: capa e vídeo são peças separadas, cada uma com 1 destaque.
+    grupos = post["pecas"] if post.get("formato") == "reels" else [post["pecas"]]
+    for g in grupos:
+        n = contar_destaques(g)
+        if n != 1:
+            raise SystemExit(f"Regra da marca: cada peça precisa de exatamente 1 destaque laranja, encontrei {n}.")
     for s in post["pecas"]:
-        if s["layout"] not in LAYOUTS:
+        if s["layout"] not in LAYOUTS and s["layout"] != "reels_video":
             raise SystemExit(f"Layout desconhecido: {s['layout']}")
+    for s in post["pecas"]:
+        if s["layout"] == "reels_video":
+            total = sum(c["dur"] for c in s["cenas"])
+            if not 15 <= total <= 30:
+                raise SystemExit(f"O vídeo precisa ter de 15 a 30 segundos, tem {total}.")
 
 
 def render(caminho_post):
@@ -140,6 +264,9 @@ def render(caminho_post):
     with sync_playwright() as p:
         nav = p.chromium.launch()
         for n, s in enumerate(post["pecas"], 1):
+            if s["layout"] == "reels_video":
+                saidas.append(render_video(nav, post, s, caminho_post.parent, n))
+                continue
             fn, altura = LAYOUTS[s["layout"]]
             corpo = fn(post, s, n, total)
             doc = f"<!doctype html><html lang='pt-BR'><head><meta charset='utf-8'><style>{CSS}</style></head><body>{corpo}</body></html>"
