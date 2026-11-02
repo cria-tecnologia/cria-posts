@@ -3,6 +3,7 @@
   "slug": "diagnostico-gratuito",
   "tema": "Diagnóstico",
   "formato": "reels",
+  "publicar_em": "2026-11-06 12:00",
   "pecas": [
     {"layout": "reels_capa", "titulo": "Quanto custa por mês o seu processo [[manual]]?", "subtitulo": "A gente faz essa conta com você no diagnóstico gratuito."},
     {"layout": "reels_video", "cenas": [
@@ -11,5 +12,7 @@
       {"tipo": "lista", "titulo": "No diagnóstico gratuito, a gente:", "itens": ["Mapeia o processo com quem executa", "Calcula quanto ele custa por mês", "Mostra o que dá para automatizar"], "dur": 6.5},
       {"tipo": "cta", "titulo": "Diagnóstico gratuito.", "texto": "Por vídeo, ou presencial na região de São Roque, Sorocaba e Itu.", "cta": "Comente DIAGNÓSTICO.", "dur": 5}
     ]}
-  ]
+  ],
+  "legenda_instagram": "Quanto custa por mês o seu processo manual?\nFaça a conta: horas por semana × pessoas × valor da hora × 4.\nNo diagnóstico gratuito, a gente faz essa conta com você, mapeia o processo e mostra o que dá para automatizar.\nPor vídeo, ou presencial na região de São Roque, Sorocaba e Itu.\nComente DIAGNÓSTICO e chamamos você no direct.\n#automacaodeprocessos #inteligenciaartificial #gestaoempresarial #pme",
+  "legenda_linkedin": "Toda empresa tem pelo menos uma tarefa que ninguém mede: alguém copia, confere ou cobra algo à mão, toda semana.\n\nEla parece barata porque não aparece em nenhuma linha do orçamento.\n\nUma conta simples mostra o tamanho: horas por semana × pessoas envolvidas × valor da hora × 4.\n\nÉ essa conta que fazemos no diagnóstico gratuito da Cria Tecnologia:\n1. Mapeamos o processo com quem executa.\n2. Calculamos quanto ele custa por mês.\n3. Mostramos o que dá para automatizar e o que não vale a pena.\n\nO diagnóstico é por vídeo, ou presencial na região de São Roque, Sorocaba e Itu.\n\nQual tarefa na sua empresa você desconfia que custa mais do que parece?\n\n#AutomacaoDeProcessos #InteligenciaArtificial"
 }
