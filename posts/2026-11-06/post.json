@@ -1,0 +1,15 @@
+{
+  "data": "2026-11-06",
+  "slug": "diagnostico-gratuito",
+  "tema": "Diagnóstico",
+  "formato": "reels",
+  "pecas": [
+    {"layout": "reels_capa", "titulo": "Quanto custa por mês o seu processo [[manual]]?", "subtitulo": "A gente faz essa conta com você no diagnóstico gratuito."},
+    {"layout": "reels_video", "cenas": [
+      {"tipo": "gancho", "titulo": "Quanto custa por mês o seu processo [[manual]]?", "dur": 4.5},
+      {"tipo": "texto", "chamada": "A conta", "titulo": "Horas por semana × pessoas × valor da hora × 4.", "texto": "É quanto uma tarefa repetitiva custa para a sua empresa todo mês.", "dur": 6},
+      {"tipo": "lista", "titulo": "No diagnóstico gratuito, a gente:", "itens": ["Mapeia o processo com quem executa", "Calcula quanto ele custa por mês", "Mostra o que dá para automatizar"], "dur": 6.5},
+      {"tipo": "cta", "titulo": "Diagnóstico gratuito.", "texto": "Por vídeo, ou presencial na região de São Roque, Sorocaba e Itu.", "cta": "Comente DIAGNÓSTICO.", "dur": 5}
+    ]}
+  ]
+}
