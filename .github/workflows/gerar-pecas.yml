@@ -1,0 +1,60 @@
+name: Gerar peças da Cria
+
+on:
+  push:
+    paths:
+      - "posts/**/post.json"
+      - ".github/workflows/gerar-pecas.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: gerar-pecas
+  cancel-in-progress: false
+
+jobs:
+  gerar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Instalar Chromium (Playwright)
+        run: |
+          pip install playwright==1.56.0
+          python -m playwright install --with-deps chromium
+
+      - name: Fonte Sora (OFL) e logos da marca
+        run: |
+          curl -sfL -o assets/Sora.ttf "https://raw.githubusercontent.com/google/fonts/main/ofl/sora/Sora%5Bwght%5D.ttf"
+          for f in assets/*.png.b64; do base64 -d "$f" > "${f%.b64}"; done
+
+      - name: Gerar peças dos posts novos ou alterados
+        run: |
+          alterados=$(git diff --name-only HEAD~1 HEAD -- 'posts/*/post.json' || true)
+          for p in posts/*/post.json; do
+            d=$(dirname "$p")
+            if [ ! -f "$d/pronto.json" ] || echo "$alterados" | grep -qx "$p"; then
+              echo "Gerando $p"
+              python render.py "$p"
+            fi
+          done
+
+      - name: Publicar as imagens no repositório
+        run: |
+          git config user.name "cria-posts-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add posts/
+          if git diff --cached --quiet; then
+            echo "Nada novo."
+          else
+            git commit -m "Peças geradas automaticamente"
+            git push
+          fi
