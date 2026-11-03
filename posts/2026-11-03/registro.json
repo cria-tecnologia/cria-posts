@@ -1,0 +1,19 @@
+{
+  "data": "2026-11-03",
+  "tema": "Cobrança com IA",
+  "formato": "carrossel",
+  "publicado_em": "2026-11-03 12:14",
+  "instagram": {"status": "publicado", "link": "https://www.instagram.com/p/DfSLbxcF2gg/", "erro": ""},
+  "linkedin": {"status": "publicado", "link": "https://www.linkedin.com/feed/update/urn:li:share:7523402253517570048/", "erro": ""},
+  "pecas": [
+    "https://raw.githubusercontent.com/cria-tecnologia/cria-posts/main/posts/2026-11-03/cobranca-com-ia-01.png",
+    "https://raw.githubusercontent.com/cria-tecnologia/cria-posts/main/posts/2026-11-03/cobranca-com-ia-02.png",
+    "https://raw.githubusercontent.com/cria-tecnologia/cria-posts/main/posts/2026-11-03/cobranca-com-ia-03.png",
+    "https://raw.githubusercontent.com/cria-tecnologia/cria-posts/main/posts/2026-11-03/cobranca-com-ia-04.png",
+    "https://raw.githubusercontent.com/cria-tecnologia/cria-posts/main/posts/2026-11-03/cobranca-com-ia-05.png",
+    "https://raw.githubusercontent.com/cria-tecnologia/cria-posts/main/posts/2026-11-03/cobranca-com-ia-06.png",
+    "https://raw.githubusercontent.com/cria-tecnologia/cria-posts/main/posts/2026-11-03/cobranca-com-ia-07.png"
+  ],
+  "fonte": "",
+  "observacoes": "Post pronto no repo, aprovado pelo usuário. Primeira tentativa no Instagram retornou 'mídia não está pronta'; conferido pela API que não saiu e repetido com sucesso. Publicado uma única vez em cada canal."
+}
