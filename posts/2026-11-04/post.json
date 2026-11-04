@@ -1,0 +1,18 @@
+{
+  "data": "2026-11-04",
+  "slug": "leitura-de-fatura",
+  "tema": "Leitura de fatura",
+  "formato": "estatico",
+  "publicar_em": "2026-11-04 12:00",
+  "pecas": [
+    {
+      "layout": "estatico",
+      "titulo": "Antes: linha por linha. Depois: só o [[diferente]].",
+      "antes": "Alguém abre a fatura e o pedido lado a lado e confere item, quantidade e valor, um por um.",
+      "depois": "A IA lê a fatura, compara com o pedido e aponta só as divergências. A equipe decide o que fazer.",
+      "cta": "Comente DIAGNÓSTICO e veja se funciona na sua empresa."
+    }
+  ],
+  "legenda_instagram": "Antes: linha por linha. Depois: só o que está diferente.\nConferir fatura de fornecedor à mão toma tempo. E, quando tudo bate, esse tempo serviu só para confirmar o que já estava certo.\nCom IA, a fatura é lida e comparada com o pedido. A equipe só olha o que não bate.\nA IA lê. Quem decide continua sendo a pessoa.\nComente DIAGNÓSTICO e mostramos como isso funcionaria na sua empresa.\n#automacaodeprocessos #inteligenciaartificial #gestaoempresarial #pme",
+  "legenda_linkedin": "Conferir fatura de fornecedor ainda é, em muitas empresas, um trabalho de linha por linha.\n\nAlguém abre a fatura de um lado e o pedido do outro e confere item, quantidade e valor. Quando tudo bate, esse tempo serviu só para confirmar o que já estava certo.\n\nÉ uma tarefa boa para a IA, porque a regra é clara e se repete todo mês:\n\n1. A IA lê a fatura no formato em que ela chega.\n2. Compara cada linha com o pedido ou o contrato.\n3. Aponta só as divergências: item a mais, quantidade diferente, preço fora do combinado.\n4. A equipe analisa o que foi apontado e decide.\n\nA IA faz a leitura. A decisão continua com quem conhece o negócio.\n\nQuanto tempo a sua equipe gasta por mês conferindo o que já estava certo?\n\n#AutomacaoDeProcessos #InteligenciaArtificial"
+}
