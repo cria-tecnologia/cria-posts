@@ -1,0 +1,19 @@
+{
+  "data": "2026-11-04",
+  "slug": "ia-na-sua-empresa",
+  "tema": "IA na sua empresa",
+  "formato": "reels",
+  "publicar_em": "2026-11-04 12:00",
+  "pecas": [
+    {"layout": "reels_capa", "titulo": "Tem gente na sua empresa fazendo trabalho de [[IA]]", "subtitulo": "O que ela já faz hoje, sem ficção científica"},
+    {"layout": "reels_video", "cenas": [
+      {"tipo": "gancho", "titulo": "Tem gente na sua empresa fazendo trabalho de [[IA]].", "dur": 4.5},
+      {"tipo": "texto", "chamada": "O QUE ELA FAZ", "titulo": "Lê, compara e organiza", "texto": "Faturas, pedidos, mensagens e documentos. Sem cansar e no mesmo padrão, todo dia.", "dur": 6},
+      {"tipo": "lista", "titulo": "3 tarefas que a IA já assume", "itens": ["Responder o cliente na hora", "Conferir documentos", "Lançar pedidos no sistema"], "dur": 6.5},
+      {"tipo": "texto", "chamada": "E A SUA EQUIPE?", "titulo": "Sai do repetitivo", "texto": "Fica no que gera receita: vender, atender e decidir.", "dur": 5.5},
+      {"tipo": "cta", "titulo": "Onde a IA entra na sua empresa?", "texto": "A gente mapeia isso com você no diagnóstico gratuito.", "cta": "Comente DIAGNÓSTICO.", "dur": 5}
+    ]}
+  ],
+  "legenda_instagram": "Tem gente na sua empresa fazendo trabalho de IA.\nLer, conferir, copiar e lançar o mesmo dado, todo santo dia.\nA IA já assume essa parte. Sua equipe fica no que gera receita.\nNo diagnóstico gratuito, mapeamos onde a IA entra na sua operação.\nComente DIAGNÓSTICO.\n#inteligenciaartificial #automacao #gestaoempresarial #pme",
+  "legenda_linkedin": "Em muitas empresas, ainda tem gente fazendo trabalho de IA.\n\nLer fatura, conferir documento, copiar o pedido da mensagem para o sistema, responder a mesma pergunta do cliente várias vezes por dia.\n\nSão tarefas com regra clara e que se repetem. É exatamente aí que a IA já entrega hoje:\n\n1. Responde o cliente na hora, com a informação certa.\n2. Confere documentos e aponta só o que não bate.\n3. Lança pedidos no sistema sem ninguém digitar de novo.\n\nA equipe não sai de cena. Sai do repetitivo e fica no que gera receita: vender, atender e decidir.\n\nNa Cria, começamos pelo diagnóstico gratuito, para mapear onde a IA faz sentido na sua operação antes de falar de tecnologia.\n\nQual tarefa da sua empresa você tiraria da mão da equipe amanhã?\n\n#InteligenciaArtificial #AutomacaoDeProcessos"
+}
