@@ -1,0 +1,13 @@
+{
+  "data": "2026-11-04",
+  "tema": "Leitura de fatura",
+  "formato": "estatico",
+  "publicado_em": "2026-11-04 12:13",
+  "instagram": {"status": "publicado", "link": "media_id 18153664045557474", "erro": ""},
+  "linkedin": {"status": "publicado", "link": "https://www.linkedin.com/feed/update/urn:li:share:7523764446293385216/", "erro": ""},
+  "pecas": [
+    "https://raw.githubusercontent.com/cria-tecnologia/cria-posts/main/posts/2026-11-04/leitura-de-fatura-01.png"
+  ],
+  "fonte": "",
+  "observacoes": "Aprovado pelo usuário. Publicado uma única vez em cada canal. Windsor indisponível (502/timeout): checagem de repetição feita pelas pastas posts/. A ação do Instagram devolveu só o media_id, sem o permalink."
+}
