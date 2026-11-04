@@ -2,20 +2,25 @@
 
 Uso: python render.py posts/2026-11-02/post.json
 Saída: PNGs na mesma pasta do post.json.
+Opcional nos Reels: "musica": "corporativa" no post.json coloca uma trilha original gerada por código.
 
 Regras da marca aplicadas aqui (Manual da marca v1.0):
 - Cores: Grafite #1B1E24, Laranja Sinal #FF5B14, Névoa #F4F5F7, Branco, Cinza Texto #5C6068, Cinza Claro #C3C6CC.
 - Fonte Sora. Logo sempre do arquivo da marca (assets/logo-*.png), nunca redigitado.
 - Um único destaque em bloco laranja por peça: marcado no texto como [[palavra]].
 """
+import array
 import html
 import json
+import math
 import pathlib
+import random
 import re
 import shutil
 import subprocess
 import sys
 import tempfile
+import wave
 
 from playwright.sync_api import sync_playwright
 
@@ -198,6 +203,111 @@ def cena_html(c):
     return f'<div class="cena{" escura" if escura else ""}" data-dur="{c["dur"]}">{"".join(partes)}</div>'
 
 
+# ---------------------------------------------------------------- trilha (música corporativa gerada por código)
+# Trilha original, sintetizada aqui mesmo (sem arquivo de música e sem direitos de terceiros).
+# Ativada no post.json com "musica": "corporativa".
+
+SR = 22050
+BPM = 112
+# I - V - vi - IV em Dó maior, um compasso por acorde
+ACORDES = [(48, [60, 64, 67]), (43, [59, 62, 67]), (45, [60, 64, 69]), (41, [60, 65, 69])]
+
+
+def _hz(m):
+    return 440.0 * 2 ** ((m - 69) / 12)
+
+
+def _soma(buf, ini, amostras):
+    n = len(buf)
+    for k, v in enumerate(amostras):
+        j = ini + k
+        if j >= n:
+            break
+        buf[j] += v
+
+
+def _nota(freq, dur, amp, ataque, decaimento, harm=(1.0,), sustenta=False):
+    n = int(dur * SR)
+    w = 2 * math.pi * freq / SR
+    out = []
+    for i in range(n):
+        t = i / SR
+        env = min(1.0, t / ataque) if ataque > 0 else 1.0
+        env *= (1.0 - 0.35 * t / dur) if sustenta else math.exp(-t / decaimento)
+        if sustenta and dur - t < 0.25:
+            env *= max(0.0, (dur - t) / 0.25)
+        s = 0.0
+        for h, a in enumerate(harm, 1):
+            s += a * math.sin(w * h * i)
+        out.append(amp * env * s)
+    return out
+
+
+def _bumbo(amp):
+    out, fase = [], 0.0
+    for i in range(int(0.28 * SR)):
+        t = i / SR
+        fase += 2 * math.pi * (48 + 80 * math.exp(-t / 0.035)) / SR
+        out.append(amp * math.exp(-t / 0.09) * math.sin(fase))
+    return out
+
+
+def _ruido(dur, amp, decaimento, agudo, rnd):
+    out, ant = [], 0.0
+    for i in range(int(dur * SR)):
+        x = rnd.uniform(-1, 1)
+        y = x - ant if agudo else (x + ant) / 2
+        ant = x
+        out.append(amp * math.exp(-(i / SR) / decaimento) * y)
+    return out
+
+
+def gerar_trilha(caminho, duracao):
+    rnd = random.Random(7)
+    n = int((duracao + 0.5) * SR)
+    buf = array.array("f", [0.0]) * n
+    tempo = 60.0 / BPM
+    compasso = 4 * tempo
+    bumbo = _bumbo(0.55)
+    palma = _ruido(0.18, 0.16, 0.05, False, rnd)
+    chimbal = _ruido(0.06, 0.07, 0.015, True, rnd)
+    c = 0
+    while c * compasso < duracao:
+        ini = c * compasso
+        baixo, notas = ACORDES[c % 4]
+        # pad suave
+        for m in notas:
+            _soma(buf, int(ini * SR), _nota(_hz(m), compasso, 0.045, 0.35, 0, (1, .35, .15), sustenta=True))
+        # baixo em colcheias
+        for b in range(8):
+            if b in (0, 3, 4, 6):
+                _soma(buf, int((ini + b * tempo / 2) * SR), _nota(_hz(baixo), tempo / 2, 0.22, 0.005, 0.18, (1, .5, .2)))
+        # arpejo (pluck) em colcheias
+        seq = [notas[0] + 12, notas[1] + 12, notas[2] + 12, notas[1] + 12] * 2
+        for k, m in enumerate(seq):
+            _soma(buf, int((ini + k * tempo / 2) * SR), _nota(_hz(m), tempo, 0.085, 0.003, 0.16, (1, .45, .2)))
+        # bateria: entra no 2º compasso
+        if c >= 1:
+            for b in range(4):
+                _soma(buf, int((ini + b * tempo) * SR), bumbo)
+                if b in (1, 3):
+                    _soma(buf, int((ini + b * tempo) * SR), palma)
+                _soma(buf, int((ini + b * tempo + tempo / 2) * SR), chimbal)
+        c += 1
+    pico = max(abs(x) for x in buf) or 1.0
+    fim = int(duracao * SR)
+    pcm = array.array("h")
+    for i in range(fim):
+        t = i / SR
+        g = min(1.0, t / 0.4) * min(1.0, (duracao - t) / 2.0)
+        pcm.append(int(0.9 * math.tanh(buf[i] / pico * 1.8) * g * 32767))
+    with wave.open(str(caminho), "wb") as w:
+        w.setnchannels(1)
+        w.setsampwidth(2)
+        w.setframerate(SR)
+        w.writeframes(pcm.tobytes())
+
+
 def achar_ffmpeg():
     exe = shutil.which("ffmpeg")
     if exe:
@@ -226,10 +336,14 @@ def render_video(nav, post, s, pasta, n, fps=30):
             pagina.evaluate(f"setT({i / fps})")
             pagina.screenshot(path=f"{d}/q{i:05d}.jpg", type="jpeg", quality=92)
         saida = pasta / f"{post['slug']}-{n:02d}.mp4"
+        if post.get("musica") == "corporativa":
+            gerar_trilha(f"{d}/trilha.wav", total)
+            audio = ["-i", f"{d}/trilha.wav"]
+        else:
+            audio = ["-f", "lavfi", "-i", "anullsrc=r=44100:cl=stereo"]
         subprocess.run([achar_ffmpeg(), "-y", "-loglevel", "error",
-                        "-framerate", str(fps), "-i", f"{d}/q%05d.jpg",
-                        "-f", "lavfi", "-i", "anullsrc=r=44100:cl=stereo",
-                        "-shortest", "-vf", "scale=in_range=pc:out_range=tv,format=yuv420p",
+                        "-framerate", str(fps), "-i", f"{d}/q%05d.jpg", *audio,
+                        "-shortest", "-ar", "44100", "-ac", "2", "-vf", "scale=in_range=pc:out_range=tv,format=yuv420p",
                         "-c:v", "libx264", "-pix_fmt", "yuv420p", "-color_range", "tv", "-profile:v", "high",
                         "-preset", "medium", "-crf", "20", "-r", str(fps),
                         "-c:a", "aac", "-b:a", "128k", "-movflags", "+faststart", str(saida)], check=True)
