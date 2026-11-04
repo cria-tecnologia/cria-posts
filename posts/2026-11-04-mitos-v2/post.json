@@ -1,0 +1,20 @@
+{
+  "data": "2026-11-04",
+  "slug": "mitos-sobre-ia",
+  "tema": "Mitos sobre IA",
+  "formato": "reels",
+  "musica": "corporativa",
+  "publicar_em": "2026-11-04 13:00",
+  "pecas": [
+    {"layout": "reels_capa", "titulo": "3 mitos sobre [[IA]] que travam a sua empresa", "subtitulo": "Mito ou verdade? Assista até o fim"},
+    {"layout": "reels_video", "cenas": [
+      {"tipo": "gancho", "titulo": "3 mitos sobre [[IA]] que travam a sua empresa.", "dur": 4},
+      {"tipo": "texto", "chamada": "MITO 1", "titulo": "IA é só para empresa grande", "texto": "Verdade: começa por um processo pequeno e repetitivo, do tamanho da sua operação.", "dur": 5.5},
+      {"tipo": "texto", "chamada": "MITO 2", "titulo": "A IA vai substituir minha equipe", "texto": "Verdade: sai o repetitivo. A pessoa fica no que gera receita e na decisão.", "dur": 5.5},
+      {"tipo": "texto", "chamada": "MITO 3", "titulo": "É só instalar um chatbot", "texto": "Verdade: sem conversar com os seus sistemas, não resolve. Começa entendendo o processo.", "dur": 5.5},
+      {"tipo": "cta", "titulo": "Qual desses você já ouviu?", "texto": "No diagnóstico gratuito, mostramos onde a IA entra de verdade na sua empresa.", "cta": "Comente DIAGNÓSTICO.", "dur": 5}
+    ]}
+  ],
+  "legenda_instagram": "3 mitos sobre IA que travam a sua empresa.\nIA não é só para empresa grande, não substitui a sua equipe e não se resolve instalando um chatbot.\nComeça por um processo repetitivo, ligado aos sistemas que você já usa.\nQual desses mitos você já ouviu?\nComente DIAGNÓSTICO e mostramos onde a IA entra na sua operação.\n#inteligenciaartificial #automacao #gestaoempresarial #pme",
+  "legenda_linkedin": "Três frases sobre IA que ainda travam muitas empresas.\n\nMito 1: IA é só para empresa grande.\nVerdade: o melhor começo é um processo pequeno e repetitivo, do tamanho da operação.\n\nMito 2: a IA vai substituir a equipe.\nVerdade: sai o trabalho repetitivo. As pessoas ficam no que gera receita e nas decisões.\n\nMito 3: é só instalar um chatbot.\nVerdade: sem conversar com os sistemas da empresa, a ferramenta vira enfeite. O ponto de partida é entender o processo.\n\nNa Cria, é por isso que tudo começa pelo diagnóstico gratuito.\n\nQual desses mitos você mais ouve na sua empresa?\n\n#InteligenciaArtificial #AutomacaoDeProcessos"
+}
