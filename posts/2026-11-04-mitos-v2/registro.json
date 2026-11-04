@@ -1,0 +1,14 @@
+{
+  "data": "2026-11-04",
+  "tema": "Mitos sobre IA",
+  "formato": "reels",
+  "publicado_em": "2026-11-04 12:48",
+  "instagram": {"status": "publicado", "link": "https://www.instagram.com/reel/DfU0DCWgMR7/", "erro": ""},
+  "linkedin": {"status": "publicado", "link": "https://www.linkedin.com/feed/update/urn:li:share:7523773268479356929/", "erro": ""},
+  "pecas": [
+    "https://raw.githubusercontent.com/cria-tecnologia/cria-posts/main/posts/2026-11-04-mitos-v2/mitos-sobre-ia-01.png",
+    "https://raw.githubusercontent.com/cria-tecnologia/cria-posts/main/posts/2026-11-04-mitos-v2/mitos-sobre-ia-02.mp4"
+  ],
+  "fonte": "",
+  "observacoes": "Segundo post do dia, pedido e aprovado pelo Luan. Primeiro Reels com trilha corporativa gerada pelo render.py (musica: corporativa). Instagram: primeira tentativa devolveu 'Video is still processing'; conferido que não saiu e repetido com sucesso. Publicado uma única vez em cada canal."
+}
