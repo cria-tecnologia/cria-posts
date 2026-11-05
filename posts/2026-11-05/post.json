@@ -1,0 +1,18 @@
+{
+  "data": "2026-11-05",
+  "slug": "processo-pronto-para-ia",
+  "tema": "Pronto para IA?",
+  "formato": "carrossel",
+  "publicar_em": "2026-11-05 12:00",
+  "pecas": [
+    {"layout": "capa", "titulo": "Antes de automatizar, responda [[isto]].", "subtitulo": "3 perguntas para saber se um processo está pronto para IA."},
+    {"layout": "interno", "chamada": "Por que perguntar", "titulo": "Nem todo processo deve virar automação.", "texto": "Automatizar o processo errado custa tempo e dinheiro. Estas 3 perguntas mostram por onde começar."},
+    {"layout": "interno", "chamada": "Pergunta 1", "titulo": "A tarefa se repete toda semana?", "texto": "O que acontece de vez em quando raramente compensa. O ganho está no que se repete, do mesmo jeito."},
+    {"layout": "interno", "chamada": "Pergunta 2", "titulo": "Dá para explicar a regra em poucas linhas?", "texto": "Se uma pessoa nova aprende o passo a passo, a IA também consegue seguir. Se cada caso é improviso, ainda não."},
+    {"layout": "interno", "chamada": "Pergunta 3", "titulo": "A informação já chega em formato digital?", "texto": "Planilha, e-mail, PDF, sistema ou WhatsApp. Se está só na cabeça de alguém, o primeiro passo é registrar."},
+    {"layout": "interno", "chamada": "O resultado", "titulo": "Três respostas sim: é um bom ponto de partida.", "texto": "Algum não? Dá para ajustar o processo antes. Melhor descobrir agora do que depois de investir."},
+    {"layout": "cta", "titulo": "Tem um processo que passou nas 3?", "texto": "No diagnóstico gratuito, olhamos esse processo com você e calculamos quanto ele custa por mês.", "cta": "Comente DIAGNÓSTICO."}
+  ],
+  "legenda_instagram": "Antes de automatizar, responda isto.\n1. A tarefa se repete toda semana?\n2. Dá para explicar a regra em poucas linhas?\n3. A informação já chega em formato digital?\nTrês respostas sim: é um bom ponto de partida para a IA. Comente DIAGNÓSTICO e olhamos esse processo com você.\n#automacaodeprocessos #inteligenciaartificial #gestaoempresarial #pme",
+  "legenda_linkedin": "Antes de automatizar um processo, vale responder três perguntas.\n\nAutomatizar o processo errado custa tempo e dinheiro, e costuma terminar com uma ferramenta que ninguém usa.\n\n1. A tarefa se repete toda semana? O que acontece de vez em quando raramente compensa. O ganho está no que se repete, do mesmo jeito.\n\n2. Dá para explicar a regra em poucas linhas? Se uma pessoa nova aprende o passo a passo, a IA também consegue seguir. Se cada caso é improviso, ainda não é a hora.\n\n3. A informação já chega em formato digital? Planilha, e-mail, PDF, sistema ou WhatsApp servem. Se está só na cabeça de alguém, o primeiro passo é registrar.\n\nTrês respostas sim indicam um bom ponto de partida. Algum não indica que o processo precisa de ajuste antes da tecnologia.\n\nNo diagnóstico gratuito da Cria Tecnologia, olhamos esse processo com quem executa e calculamos quanto ele custa por mês.\n\nQual processo da sua empresa passaria nas três perguntas?\n\n#AutomacaoDeProcessos #InteligenciaArtificial"
+}
