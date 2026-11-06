@@ -1,0 +1,18 @@
+{
+  "data": "2026-11-06",
+  "slug": "proposta-comercial",
+  "tema": "Proposta comercial",
+  "formato": "reels",
+  "publicar_em": "2026-11-06 12:00",
+  "pecas": [
+    {"layout": "reels_capa", "titulo": "Três abas abertas para montar uma [[proposta]]?", "subtitulo": "No diagnóstico gratuito, mostramos o que dá para automatizar."},
+    {"layout": "reels_video", "cenas": [
+      {"tipo": "gancho", "titulo": "Três abas abertas para montar uma [[proposta]]?", "dur": 4.5},
+      {"tipo": "texto", "chamada": "Antes", "titulo": "Copiar dados de três lugares.", "texto": "Cliente num sistema, preço numa planilha, condições num e-mail. Tudo copiado à mão.", "dur": 6},
+      {"tipo": "texto", "chamada": "Depois", "titulo": "A proposta sai do CRM.", "texto": "Os dados do cliente e da negociação já estão lá. A proposta é gerada a partir deles.", "dur": 6},
+      {"tipo": "cta", "titulo": "Diagnóstico gratuito.", "texto": "Mapeamos o seu processo comercial e mostramos o que dá para automatizar.", "cta": "Comente DIAGNÓSTICO.", "dur": 5}
+    ]}
+  ],
+  "legenda_instagram": "Três abas abertas para montar uma proposta comercial?\nCliente num sistema, preço numa planilha, condições num e-mail. Tudo copiado à mão.\nQuando a negociação já está no CRM, a proposta pode ser gerada a partir desses dados, no padrão da empresa.\nNo diagnóstico gratuito, olhamos esse processo com você e mostramos o que dá para automatizar.\nComente DIAGNÓSTICO e chamamos você no direct.\n#automacaodeprocessos #inteligenciaartificial #vendas #pme",
+  "legenda_linkedin": "Em muitas empresas, montar uma proposta comercial ainda é trabalho de copiar e colar.\n\nOs dados do cliente vêm de um sistema. O preço, de uma planilha. As condições combinadas, de um e-mail ou de uma conversa no WhatsApp.\n\nCada cópia manual é uma chance de erro. E cada proposta que demora é uma venda que esfria.\n\nQuando a negociação já está registrada no CRM, a proposta pode ser gerada a partir desses dados, no modelo da empresa. O vendedor revisa e envia.\n\nÉ esse tipo de processo que olhamos no diagnóstico gratuito da Cria Tecnologia: mapeamos com quem executa e mostramos o que dá para automatizar e o que não vale a pena.\n\nQuantos lugares a sua equipe consulta hoje para montar uma proposta?\n\n#AutomacaoDeProcessos #Vendas"
+}
