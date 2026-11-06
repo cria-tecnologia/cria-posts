@@ -1,0 +1,14 @@
+{
+  "data": "2026-11-06",
+  "tema": "Proposta comercial",
+  "formato": "reels",
+  "publicado_em": "2026-11-06 12:12",
+  "instagram": {"status": "publicado", "link": "https://www.instagram.com/reel/DfZ5gm6FTMd/", "erro": ""},
+  "linkedin": {"status": "publicado", "link": "https://www.linkedin.com/feed/update/urn:li:share:7524488914884288512/", "erro": ""},
+  "pecas": [
+    "https://raw.githubusercontent.com/cria-tecnologia/cria-posts/main/posts/2026-11-06-v2/proposta-comercial-01.png",
+    "https://raw.githubusercontent.com/cria-tecnologia/cria-posts/main/posts/2026-11-06-v2/proposta-comercial-02.mp4"
+  ],
+  "fonte": "",
+  "observacoes": "TROCA DE TEMA: o Reels de diagnostico gratuito planejado para hoje, pasta posts/2026-11-06/, ja esta no Instagram desde 04/11 as 13:00, reel DfU1g7Yg17L, com a mesma legenda e a mesma conta. Conferido pela API do Instagram. Publicar de novo repetiria tema e gancho. Publicado no lugar um Reels de oferta do diagnostico com o tema do calendario de 11/11, proposta comercial, pasta posts/2026-11-06-v2/, CTA DIAGNOSTICO. O dia 11/11 precisa de novo tema, e o 12/11 ja precisava. O Reels de diagnostico continua inedito no LinkedIn, se quiserem usar la. Instagram: primeira tentativa devolveu 'Video is still processing'; conferido pela API que nao saiu e repetido com sucesso. LinkedIn: a acao devolveu 'Could not find entity', mas o post saiu; conferido pela API. Publicado uma unica vez em cada canal."
+}
