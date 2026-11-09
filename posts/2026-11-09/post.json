@@ -1,0 +1,18 @@
+{
+  "data": "2026-11-09",
+  "slug": "conferencia-de-documentos",
+  "tema": "Conferência de documentos",
+  "formato": "carrossel",
+  "publicar_em": "2026-11-09 12:00",
+  "pecas": [
+    {"layout": "capa", "titulo": "Quem confere os [[documentos]] que chegam?", "subtitulo": "Como a IA faz a primeira conferência, passo a passo."},
+    {"layout": "interno", "chamada": "O problema", "titulo": "Contrato, certidão, comprovante: tudo chega por e-mail e WhatsApp.", "texto": "E alguém para o que está fazendo para abrir, ler e conferir cada arquivo, um por um."},
+    {"layout": "interno", "chamada": "Passo 1", "titulo": "A IA recebe e separa cada documento.", "texto": "Do e-mail, do WhatsApp ou do sistema que a empresa já usa. E identifica o tipo de cada um."},
+    {"layout": "interno", "chamada": "Passo 2", "titulo": "Confere se está tudo lá.", "texto": "Compara com a lista que vocês exigem e vê se cada arquivo está legível e dentro da validade."},
+    {"layout": "interno", "chamada": "Passo 3", "titulo": "Compara os dados com o cadastro.", "texto": "Nome, CNPJ, endereço e datas lidos do documento e checados com o que já está registrado."},
+    {"layout": "interno", "chamada": "Passo 4", "titulo": "Pede o que falta e passa o resto para a equipe.", "texto": "Avisa quem enviou o que está faltando. O que exige análise chega para a pessoa certa, já organizado."},
+    {"layout": "cta", "titulo": "Menos tempo abrindo arquivo. Mais tempo decidindo.", "texto": "Quer saber como isso funcionaria na sua empresa?", "cta": "Comente DIAGNÓSTICO."}
+  ],
+  "legenda_instagram": "Quem confere os documentos que chegam na sua empresa?\nContrato, certidão, comprovante: tudo chega por e-mail e WhatsApp, e alguém precisa abrir um por um.\nA IA pode fazer a primeira conferência: separa cada documento, vê se está completo e dentro da validade e compara os dados com o cadastro.\nO que falta é pedido a quem enviou. O que exige análise vai para a equipe.\nComente DIAGNÓSTICO e mostramos como isso funcionaria na sua empresa.\n#automacaodeprocessos #inteligenciaartificial #gestaoempresarial #pme",
+  "legenda_linkedin": "Quem confere os documentos que chegam na sua empresa?\n\nContrato, certidão, comprovante de endereço, documentos de cadastro de cliente ou fornecedor. Chegam por e-mail, por WhatsApp, em PDF ou em foto.\n\nEm muitas empresas, alguém para o que está fazendo para abrir cada arquivo e conferir se está tudo ali.\n\nA IA pode assumir essa primeira conferência:\n1. Recebe e separa cada documento pelo tipo.\n2. Confere se a lista exigida está completa e se cada arquivo está legível e dentro da validade.\n3. Compara nome, CNPJ, endereço e datas com o que já está no cadastro.\n4. Pede a quem enviou o que está faltando e passa para a equipe o que exige análise.\n\nA equipe deixa de procurar problema em pilha de arquivo e passa a decidir sobre o que já chega organizado.\n\nQuanto tempo por semana alguém da sua equipe passa abrindo e conferindo documentos?\n\n#AutomacaoDeProcessos #InteligenciaArtificial"
+}
