@@ -1,0 +1,19 @@
+{
+  "data": "2026-11-09",
+  "tema": "Conferência de documentos",
+  "formato": "carrossel",
+  "publicado_em": "2026-11-09 12:15",
+  "instagram": {"status": "publicado", "link": "media_id 17975658138174576", "erro": ""},
+  "linkedin": {"status": "publicado", "link": "https://www.linkedin.com/feed/update/urn:li:share:7525575130211745794/", "erro": ""},
+  "pecas": [
+    "https://raw.githubusercontent.com/cria-tecnologia/cria-posts/main/posts/2026-11-09/conferencia-de-documentos-01.png",
+    "https://raw.githubusercontent.com/cria-tecnologia/cria-posts/main/posts/2026-11-09/conferencia-de-documentos-02.png",
+    "https://raw.githubusercontent.com/cria-tecnologia/cria-posts/main/posts/2026-11-09/conferencia-de-documentos-03.png",
+    "https://raw.githubusercontent.com/cria-tecnologia/cria-posts/main/posts/2026-11-09/conferencia-de-documentos-04.png",
+    "https://raw.githubusercontent.com/cria-tecnologia/cria-posts/main/posts/2026-11-09/conferencia-de-documentos-05.png",
+    "https://raw.githubusercontent.com/cria-tecnologia/cria-posts/main/posts/2026-11-09/conferencia-de-documentos-06.png",
+    "https://raw.githubusercontent.com/cria-tecnologia/cria-posts/main/posts/2026-11-09/conferencia-de-documentos-07.png"
+  ],
+  "fonte": "",
+  "observacoes": "Publicado sem aprovação prévia, MODO_APROVACAO = NÃO. Tema do calendário de 09/11. Para não repetir a leitura de fatura de 04/11, o foco foi documentos recebidos de clientes e fornecedores: completude, validade e conferência com o cadastro. Publicado uma única vez em cada canal. A ação do Instagram devolveu só o media_id, sem o permalink; o Windsor no plano trial não permite atualizar o cache na hora. Lembrete do registro de 06/11: os dias 11/11 e 12/11 do calendário precisam de tema novo, porque os temas planejados já saíram."
+}
