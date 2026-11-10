@@ -1,0 +1,18 @@
+{
+  "data": "2026-11-10",
+  "tema": "Notícia comentada: Itaú leva o assistente de IA ia.i ao app das PMEs",
+  "formato": "carrossel",
+  "publicado_em": "2026-11-10 12:17",
+  "instagram": {"status": "publicado", "link": "media id 18136091092765495 — permalink ainda não disponível no Windsor no momento do registro", "erro": ""},
+  "linkedin": {"status": "erro", "link": "", "erro": "Zapier LinkedIn create_company_update retornou 'Could not find entity' em 3 tentativas — company_id 145065973 confirmado na lista de páginas, image_type post_media, imagem = capa 01. Nada foi publicado."},
+  "pecas": [
+    "https://raw.githubusercontent.com/cria-tecnologia/cria-posts/main/posts/2026-11-10/itau-ia-no-app-das-pmes-01.png",
+    "https://raw.githubusercontent.com/cria-tecnologia/cria-posts/main/posts/2026-11-10/itau-ia-no-app-das-pmes-02.png",
+    "https://raw.githubusercontent.com/cria-tecnologia/cria-posts/main/posts/2026-11-10/itau-ia-no-app-das-pmes-03.png",
+    "https://raw.githubusercontent.com/cria-tecnologia/cria-posts/main/posts/2026-11-10/itau-ia-no-app-das-pmes-04.png",
+    "https://raw.githubusercontent.com/cria-tecnologia/cria-posts/main/posts/2026-11-10/itau-ia-no-app-das-pmes-05.png",
+    "https://raw.githubusercontent.com/cria-tecnologia/cria-posts/main/posts/2026-11-10/itau-ia-no-app-das-pmes-06.png"
+  ],
+  "fonte": "https://www.dgabc.com.br/Noticia/4367707/itau-unibanco-leva-ia-i-inteligencia-artificial-generativa-as-pmes",
+  "observacoes": "Notícia de 09/11/2026 12:41, dentro das 48h. Fatos e números conferidos na fonte. Pastas posts/ dos últimos 30 dias não puderam ser listadas por API; checagem de repetição feita pelo Windsor, sem notícia comentada anterior. LinkedIn falhou: publicar manualmente a capa 01 com o campo legenda_linkedin do post.json na página Cria Tecnologia, ou verificar a conexão LinkedIn em https://mcp.zapier.com."
+}
