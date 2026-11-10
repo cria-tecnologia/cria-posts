@@ -1,0 +1,47 @@
+{
+  "data": "2026-11-10",
+  "slug": "itau-ia-no-app-das-pmes",
+  "tema": "Notícia comentada",
+  "formato": "carrossel",
+  "publicar_em": "2026-11-10 12:00",
+  "fonte": "https://www.dgabc.com.br/Noticia/4367707/itau-unibanco-leva-ia-i-inteligencia-artificial-generativa-as-pmes",
+  "pecas": [
+    {
+      "layout": "capa",
+      "titulo": "O Itaú colocou [[IA]] no app das PMEs",
+      "subtitulo": "O que isso muda para a sua empresa"
+    },
+    {
+      "layout": "interno",
+      "chamada": "A NOTÍCIA",
+      "titulo": "O Itaú levou o ia.i, seu assistente de IA, ao app de empresas",
+      "texto": "Anunciado em 9/11, já está disponível para um grupo de clientes do Itaú Empresas. Fonte: Diário do Grande ABC."
+    },
+    {
+      "layout": "interno",
+      "chamada": "O QUE ELE FAZ",
+      "titulo": "Lê os dados financeiros e entrega um diagnóstico do negócio",
+      "texto": "O dono conversa com a IA em linguagem natural sobre esse diagnóstico e sobre a rotina do banco."
+    },
+    {
+      "layout": "interno",
+      "chamada": "NA SUA EMPRESA",
+      "titulo": "Numa empresa de 30 pessoas, o banco vê o extrato. Não vê o processo.",
+      "texto": "Cobrança, conferência de documentos e pedidos digitados à mão continuam na rotina da equipe."
+    },
+    {
+      "layout": "interno",
+      "chamada": "NOSSA OPINIÃO",
+      "titulo": "A IA chegou ao banco. O próximo passo é a sua operação.",
+      "texto": "Pesquisa citada pelo Itaú: 70% dos donos de PME creem que a IA pode acelerar o negócio. Só 13% estão em nível avançado."
+    },
+    {
+      "layout": "cta",
+      "titulo": "Onde a IA entra na sua operação?",
+      "texto": "No diagnóstico gratuito, mapeamos seus processos e mostramos o que vale automatizar.",
+      "cta": "Comente DIAGNÓSTICO."
+    }
+  ],
+  "legenda_instagram": "O Itaú colocou IA no app das pequenas e médias empresas.\nO ia.i lê os dados financeiros da empresa e entrega um diagnóstico do negócio. Por enquanto, para um grupo de clientes.\nÉ um bom sinal, mas o banco vê o extrato. Não vê a cobrança, a conferência de documentos e os pedidos digitados à mão.\nArraste para ver o que isso muda para a sua empresa.\nComente DIAGNÓSTICO e mostramos onde a IA entra na sua operação.\n#inteligenciaartificial #pme #automacaodeprocessos #gestaoempresarial",
+  "legenda_linkedin": "O Itaú Unibanco anunciou ontem, 9 de novembro, que o ia.i, seu assistente de IA generativa, chegou ao app para pequenas e médias empresas.\nSegundo o banco, a ferramenta usa as informações financeiras de cada empresa para gerar um diagnóstico individualizado do negócio, com conversa em linguagem natural. Por enquanto, está disponível para um grupo de clientes do app Itaú Empresas.\nO material do banco cita uma pesquisa da Strand Partners: 70% dos fundadores de PMEs acreditam que a IA pode acelerar o crescimento, mas só 13% estão em níveis avançados de uso.\nNa nossa leitura, a notícia mostra que a IA está chegando ao dia a dia do dono de PME, a começar pelo banco.\nMas o banco enxerga o resultado que aparece no extrato. O tempo gasto para chegar nele fica dentro da empresa: cobrança feita cliente a cliente, documentos conferidos à mão, pedidos digitados duas vezes.\nÉ aí que está a distância entre usar IA e ter IA trabalhando na operação.\nNo diagnóstico gratuito da Cria, mapeamos esses processos com quem executa e mostramos o que vale automatizar.\nFonte: Diário do Grande ABC — https://www.dgabc.com.br/Noticia/4367707/itau-unibanco-leva-ia-i-inteligencia-artificial-generativa-as-pmes\nNa sua empresa, a IA já saiu do app e chegou aos processos?\n#InteligenciaArtificial #PME"
+}
