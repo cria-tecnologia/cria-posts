@@ -1,0 +1,11 @@
+{
+  "data": "2026-11-11",
+  "tema": "Relatório semanal",
+  "formato": "estatico",
+  "publicado_em": "",
+  "instagram": {"status": "pulado", "link": "", "erro": "Peças não geradas: pronto.json não apareceu em 8 minutos."},
+  "linkedin": {"status": "pulado", "link": "", "erro": "Peças não geradas: pronto.json não apareceu em 8 minutos."},
+  "pecas": [],
+  "fonte": "",
+  "observacoes": "NADA PUBLICADO. post.json enviado às 12:06 (commit 6341f89). A automação Gerar peças da Cria não gerou pronto.json nem a peça PNG após mais de 8 minutos de polling, até 12:15. O status dos Actions não pôde ser lido desta sessão: conferir em https://github.com/cria-tecnologia/cria-posts/actions. Se a automação rodar depois, as peças aparecerão nesta pasta e o post pode ser publicado manualmente ou na próxima execução. TROCA DE TEMA: o tema do calendário para 11/11, proposta comercial, já saiu em 06/11 nos dois canais. Usado no lugar o estático de prova do calendário de 25/11, relatório semanal; o dia 25/11 e o 12/11 precisam de novo tema. ALERTA LINKEDIN: o registro de 10/11 diz que o LinkedIn falhou, mas o Windsor mostra o post do Itaú publicado DUAS vezes na página em 10/11, com legendas quase iguais. Apagar um dos dois manualmente na página Cria Tecnologia."
+}
