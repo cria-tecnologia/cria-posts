@@ -1,0 +1,19 @@
+{
+  "data": "2026-11-11",
+  "slug": "relatorio-semanal",
+  "tema": "Relatório semanal",
+  "formato": "estatico",
+  "publicar_em": "2026-11-11 12:00",
+  "fonte": "",
+  "pecas": [
+    {
+      "layout": "estatico",
+      "titulo": "O relatório de segunda chega [[pronto]] no e-mail.",
+      "antes": "Toda segunda, alguém junta dados de planilhas e sistemas, monta as tabelas e envia o relatório à mão.",
+      "depois": "Os dados são reunidos sozinhos, o relatório fecha no mesmo padrão e chega por e-mail. A equipe só analisa.",
+      "cta": "Comente DIAGNÓSTICO e veja se funciona na sua empresa."
+    }
+  ],
+  "legenda_instagram": "Antes: a segunda de manhã montando relatório. Depois: ele já está na caixa de entrada.\nVendas num sistema, financeiro em outro, metas numa planilha. Toda semana, alguém junta tudo, confere e envia.\nCom automação, os dados são reunidos sozinhos e o relatório chega por e-mail, sempre no mesmo formato.\nA equipe deixa de montar o relatório e passa a usar o relatório.\nComente DIAGNÓSTICO e mostramos como isso funcionaria na sua empresa.\n#automacaodeprocessos #inteligenciaartificial #gestaoempresarial #pme",
+  "legenda_linkedin": "Em muitas empresas, a segunda-feira começa com alguém montando o relatório da semana.\n\nOs números de vendas vêm de um sistema. Os do financeiro, de outro. As metas, de uma planilha. Alguém copia, confere, ajusta a formatação e envia.\n\nÉ uma tarefa com regra clara, que se repete toda semana do mesmo jeito. Por isso é uma boa candidata para automação:\n\n1. Os dados são puxados direto das fontes, sem copiar e colar.\n2. O relatório fecha sozinho, sempre no mesmo formato.\n3. A IA pode escrever um resumo do que mudou em relação à semana anterior.\n4. Tudo chega por e-mail para quem precisa, no horário combinado.\n\nA equipe deixa de montar o relatório e passa a usar o relatório para decidir.\n\nNo diagnóstico gratuito da Cria, olhamos esse processo com quem executa e mostramos o que vale automatizar.\n\nQuanto tempo a sua equipe gasta toda semana montando relatório?\n\n#AutomacaoDeProcessos #GestaoEmpresarial"
+}
