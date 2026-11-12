@@ -1,0 +1,19 @@
+{
+  "data": "2026-11-12",
+  "tema": "Bastidores do conteúdo",
+  "formato": "carrossel",
+  "publicado_em": "2026-11-12 12:10",
+  "instagram": {"status": "publicado", "link": "media_id 18099477983656393", "erro": ""},
+  "linkedin": {"status": "publicado", "link": "https://www.linkedin.com/feed/update/urn:li:share:7526662404634791936/", "erro": ""},
+  "pecas": [
+    "https://raw.githubusercontent.com/cria-tecnologia/cria-posts/main/posts/2026-11-12/bastidores-do-conteudo-01.png",
+    "https://raw.githubusercontent.com/cria-tecnologia/cria-posts/main/posts/2026-11-12/bastidores-do-conteudo-02.png",
+    "https://raw.githubusercontent.com/cria-tecnologia/cria-posts/main/posts/2026-11-12/bastidores-do-conteudo-03.png",
+    "https://raw.githubusercontent.com/cria-tecnologia/cria-posts/main/posts/2026-11-12/bastidores-do-conteudo-04.png",
+    "https://raw.githubusercontent.com/cria-tecnologia/cria-posts/main/posts/2026-11-12/bastidores-do-conteudo-05.png",
+    "https://raw.githubusercontent.com/cria-tecnologia/cria-posts/main/posts/2026-11-12/bastidores-do-conteudo-06.png",
+    "https://raw.githubusercontent.com/cria-tecnologia/cria-posts/main/posts/2026-11-12/bastidores-do-conteudo-07.png"
+  ],
+  "fonte": "",
+  "observacoes": "Publicado sem aprovação prévia, MODO_APROVACAO = NÃO. TROCA DE TEMA: o tema do calendário para 12/11, 3 perguntas para saber se um processo está pronto para IA, já saiu em 05/11. Publicado no lugar o carrossel de bastidores do calendário de 19/11, Como a Cria automatizou o próprio conteúdo, com CTA DIAGNÓSTICO; o dia 19/11 precisa de novo tema. Repetição checada no Windsor, Instagram e LinkedIn, e nas pastas posts/ de novembro. As peças foram geradas em cerca de 1 minuto: a automação voltou a funcionar. LinkedIn: a ação create_company_update devolveu 'Could not find entity', mas o post saiu; conferido pela API do LinkedIn, não repetido. Instagram devolveu só o media_id. PENDÊNCIAS: 1 o post de 11/11, Relatório semanal, não foi publicado e posts/2026-11-11/ continua sem peças; 2 o post do Itaú de 10/11 segue DUPLICADO na página do LinkedIn, urn:li:share:7525938002133528577 e urn:li:share:7525937929030950912: apagar um manualmente."
+}
