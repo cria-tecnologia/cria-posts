@@ -1,0 +1,19 @@
+{
+  "data": "2026-11-12",
+  "slug": "bastidores-do-conteudo",
+  "tema": "Bastidores do conteúdo",
+  "formato": "carrossel",
+  "publicar_em": "2026-11-12 12:00",
+  "fonte": "",
+  "pecas": [
+    {"layout": "capa", "titulo": "Este post foi montado por uma [[automação]].", "subtitulo": "Construída por nós. Veja como ela funciona, passo a passo."},
+    {"layout": "interno", "chamada": "Por que fizemos", "titulo": "Postar todo dia útil é uma rotina que se repete, com regra clara.", "texto": "É o tipo de processo que recomendamos automatizar. Então começamos pelo nosso."},
+    {"layout": "interno", "chamada": "Passo 1", "titulo": "O mês é planejado num calendário.", "texto": "Formato, tema, gancho e chamada de cada dia útil, definidos por nós com antecedência."},
+    {"layout": "interno", "chamada": "Passo 2", "titulo": "A IA escreve o texto seguindo as nossas regras.", "texto": "Tom da marca, nenhum número inventado e nenhum tema repetido dos últimos 30 dias."},
+    {"layout": "interno", "chamada": "Passo 3", "titulo": "Uma automação gera as artes no padrão da marca.", "texto": "Cores, fonte e logo sempre iguais. Se uma regra de layout não é cumprida, a peça é recusada."},
+    {"layout": "interno", "chamada": "Passo 4", "titulo": "Checklist, publicação e registro.", "texto": "Fatos, português e conta certa conferidos. Só então o post sai no Instagram e no LinkedIn."},
+    {"layout": "cta", "titulo": "Automatizamos o que é repetitivo. Começando pelo nosso.", "texto": "Quer descobrir qual rotina da sua empresa dá para automatizar?", "cta": "Comente DIAGNÓSTICO."}
+  ],
+  "legenda_instagram": "Este post foi montado por uma automação que nós construímos.\nO calendário define o tema, a IA escreve o texto com as nossas regras e uma automação gera as artes no padrão da marca.\nAntes de sair, tudo passa por um checklist: nenhum número inventado, nenhum tema repetido.\nÉ o que recomendamos para toda rotina que se repete com regra clara. Começamos pela nossa.\nComente DIAGNÓSTICO e mostramos qual rotina da sua empresa dá para automatizar.\n#automacaodeprocessos #inteligenciaartificial #bastidores #pme",
+  "legenda_linkedin": "Este post foi montado por uma automação que nós construímos.\n\nPublicar todo dia útil é uma rotina que se repete, com regra clara. Pelos mesmos critérios que usamos com as empresas que atendemos, era candidata a automação. Então começamos pela nossa.\n\nFunciona assim:\n1. O mês é planejado num calendário: formato, tema, gancho e chamada de cada dia.\n2. A IA escreve o texto seguindo o tom da marca e regras fixas: nenhum número inventado, nenhum tema repetido dos últimos 30 dias.\n3. Uma automação gera as artes no padrão da marca. Se uma regra de layout não é cumprida, a peça é recusada.\n4. Antes de publicar, um checklist confere fatos, português e se cada post vai para a conta certa.\n5. Depois de publicado, tudo fica registrado.\n\nO que dizer continua sendo decisão nossa. O trabalho repetitivo saiu da agenda.\n\nNo diagnóstico gratuito da Cria, olhamos com você qual rotina da sua empresa dá para automatizar.\n\nQual tarefa da sua empresa se repete toda semana, do mesmo jeito?\n\n#AutomacaoDeProcessos #InteligenciaArtificial"
+}
