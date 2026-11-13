@@ -1,0 +1,18 @@
+{
+  "data": "2026-11-13",
+  "slug": "comecar-com-ia-sem-entender-de-tecnologia",
+  "tema": "Diagnóstico gratuito",
+  "formato": "reels",
+  "publicar_em": "2026-11-13 12:00",
+  "pecas": [
+    {"layout": "reels_capa", "titulo": "Você não precisa entender de [[IA]] para começar.", "subtitulo": "No diagnóstico gratuito, a Cria mostra onde a IA ajuda a sua empresa."},
+    {"layout": "reels_video", "cenas": [
+      {"tipo": "gancho", "titulo": "Você não precisa entender de [[IA]] para começar.", "dur": 4.5},
+      {"tipo": "texto", "chamada": "O ponto de partida", "titulo": "Você conhece o seu processo. Nós conhecemos a tecnologia.", "texto": "No diagnóstico gratuito, juntamos as duas coisas antes de falar em ferramenta.", "dur": 6},
+      {"tipo": "lista", "titulo": "Como funciona o diagnóstico:", "itens": ["Você conta onde a equipe perde tempo", "Mapeamos o processo com quem executa", "Mostramos o que vale automatizar"], "dur": 6.5},
+      {"tipo": "cta", "titulo": "Diagnóstico gratuito.", "texto": "Por vídeo, ou presencial na região de São Roque, Sorocaba e Itu.", "cta": "Comente DIAGNÓSTICO.", "dur": 5}
+    ]}
+  ],
+  "legenda_instagram": "Você não precisa entender de IA para começar.\nVocê conhece o seu processo. Nós conhecemos a tecnologia.\nNo diagnóstico gratuito, mapeamos o processo com quem executa e mostramos o que vale automatizar e o que não vale.\nPor vídeo, ou presencial na região de São Roque, Sorocaba e Itu.\nComente DIAGNÓSTICO e chamamos você no direct.\n#inteligenciaartificial #automacaodeprocessos #gestaoempresarial #pme",
+  "legenda_linkedin": "Muitos donos de empresa adiam a IA por um motivo simples: acham que precisam entender de tecnologia antes de começar.\n\nNão precisam.\n\nQuem conhece o processo é quem toca a empresa: onde a equipe perde tempo, o que é copiado à mão, o que trava a semana.\n\nA parte técnica fica com a Cria.\n\nÉ assim que funciona o diagnóstico gratuito da Cria Tecnologia:\n1. Você conta onde a equipe perde tempo.\n2. Mapeamos o processo com quem executa.\n3. Mostramos o que vale automatizar e o que não vale a pena.\n\nO diagnóstico é por vídeo, ou presencial na região de São Roque, Sorocaba e Itu.\n\nO que ainda faz você adiar o primeiro passo com IA na sua empresa?\n\n#InteligenciaArtificial #AutomacaoDeProcessos"
+}
