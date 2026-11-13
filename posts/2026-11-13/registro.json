@@ -1,0 +1,11 @@
+{
+  "data": "2026-11-13",
+  "tema": "Diagnóstico gratuito",
+  "formato": "reels",
+  "publicado_em": "",
+  "instagram": {"status": "pulado", "link": "", "erro": "Peças não geradas: pronto.json não apareceu em 8 minutos."},
+  "linkedin": {"status": "pulado", "link": "", "erro": "Peças não geradas: pronto.json não apareceu em 8 minutos."},
+  "pecas": [],
+  "fonte": "",
+  "observacoes": "NADA PUBLICADO. post.json enviado às 12:43 de Brasília, commit a68ff74. A automação Gerar peças da Cria não gerou pronto.json em 8 minutos de polling, até 12:51; conferido também pela API do GitHub. O status dos Actions não pôde ser lido desta sessão: conferir em https://github.com/cria-tecnologia/cria-posts/actions. Segunda falha seguida: o pronto.json de 11/11 só apareceu depois do prazo, então a automação está lenta ou enfileirada. Se as peças aparecerem nesta pasta, o Reels pode ser publicado manualmente com as legendas do post.json: Instagram cria.tecnologia 17841423513461846, LinkedIn página 145065973, só a capa. TROCA DE TEMA: o calendário previa Social Cria teste grátis, mas a pendência Social Cria descrito até 11/11 segue aberta e não há descrição do produto acessível; virou oferta de diagnóstico com CTA DIAGNÓSTICO em vez de TESTE. Novo gancho para não repetir 04/11 e 06/11: Você não precisa entender de IA para começar. Repetição checada no Windsor, Instagram e LinkedIn, e nos post.json de 03 a 12/11. Fatos usados só os já publicados: diagnóstico gratuito, por vídeo ou presencial na região de São Roque, Sorocaba e Itu."
+}
